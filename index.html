@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Стажировка</title>
+</head>
+
+<body>
+  <!-- <header>
+    <div class="container">
+      <div class="logo">
+        <a href="/">Стажировки в <strong>IT</strong></a>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#vac">Вакансии</a></li>
+            <li><a href="#usl">Условия</a></li>
+            <li><a href="#trb">Требования</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <a href="#zay">Подать заявку</a>
+      </div>
+    </div>
+  </header> -->
+
+  <body>
+    <div class="container">
+      <section class="logic-block">
+        <h1>
+          Стажировка <br />
+          в одной из лучших <br />
+          <strong>IT-компаний</strong> России
+        </h1>
+        <figure id="hero-figuru">
+          <img src="./images/3d-business-man-standing-with-laptop-and-coffee.png" alt="Картинка" />
+          <figcaption>
+            Илюстрация c <a href="https://icons8.com">Icons8</a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="logic-block" id="vac">
+        <h2>Вакансии</h2>
+        <ul>
+          <li>Frontend</li>
+          <li>Backend</li>
+          <li>Мобильная разработка</li>
+          <li>DevOps</li>
+          <li>Анализ данных</li>
+          <li>Машинное обучение</li>
+        </ul>
+      </section>
+      <section class="logic-block" id="usl">
+        <h2>Условия</h2>
+        <table class="big-table">
+          <thead>
+            <th></th>
+            <th>Стажировка в течение года</th>
+            <th>Стажировка летняя</th>
+            <th>Погружение: интенсивная стажировка</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Формат работы</th>
+              <td colspan="2">✔ Очно или Дистанционно</td>
+              <td>✔ Очно</td>
+            </tr>
+            <tr>
+              <th>Дата начала</th>
+              <td>✔ Каждый месяц</td>
+              <td>✔ Май</td>
+              <td>✔ Февраль, Август</td>
+            </tr>
+            <tr>
+              <th>Оплата проезда</th>
+              <td colspan="3">✔ Да</td>
+            </tr>
+            <tr>
+              <th>Оплата проживания</th>
+              <td>✕ Нет</td>
+              <td colspan="2">✔ Да</td>
+            </tr>
+            <tr>
+              <th>Занятость</th>
+              <td colspan="2">✔ Гибкий график от 20 до 40 часов в неделю</td>
+              <td>✔ Полная 5/2</td>
+            </tr>
+            <tr>
+              <th>Продолжительность</th>
+              <td>✔ от 3 до 6 меясцев</td>
+              <td>✔ 3 месяца</td>
+              <td>✔ 1 месяц</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <th>Оплата</th>
+            <th colspan="2">до 50 000 ₽</th>
+            <th>до 100 000 ₽</th>
+          </tfoot>
+        </table>
+      </section>
+      <section class="logic-block" id="trb">
+        <h2>Требования</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quidem
+          fugiat asperiores accusamus, quaerat dolorem delectus!
+          <strong>Cupiditate, quaerat facilis optio minima dolore</strong>
+          reiciendis labore temporibus impedit soluta veritatis architecto
+          eligendi maiores rerum dolorem asperiores fugiat iusto porro!
+          Repellat dolor consequatur sapiente? Rem nihil doloribus debitis!
+          <em>Quis cupiditate est dolores</em>, nobis quam accusantium! Ea,
+          aut a vero eius maxime suscipit? Iusto ullam eligendi aspernatur aut
+          harum recusandae consequatur beatae quibusdam doloribus enim,
+          sapiente, quo dolore est itaque alias minima quod distinctio rem
+          soluta! Reiciendis beatae ducimus fugit quam aliquid harum, labore
+          voluptates voluptatum atque, quidem nesciunt ex quod consequatur!
+          Reprehenderit, neque.
+        </p>
+      </section>
+      <section class="logic-block zayavka" id="zay">
+        <h2>Подать заявку</h2>
+        <form action="" method="get">
+          <div>
+            <label for="city">Ваш город</label>
+            <select name="city" id="city">
+              <option value="">--Выберите город--</option>
+              <option value="moscow">Москва</option>
+              <option value="saintpetersburg">Санк-Петербург</option>
+              <option value="kazan">Казань</option>
+              <option value="nnovgorod">Нижний Новгород</option>
+              <option value="irkutsk">Иркутск</option>
+              <option value="novosibirsk">Новосибирск</option>
+            </select>
+          </div>
+
+          <label for="naps">Направление</label>
+          <select name="naps" id="naps">
+            <option value="">--Выберите направление--</option>
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="DevOps">DevOps</option>
+            <option value="analiz">Анализ данных</option>
+            <option value="cars">Машинное обучение</option>
+          </select>
+
+          <div id="name">
+            <div id="label">
+              <label for="name"><span>Имя</span>
+                <input type="text" id="name" required />
+              </label>
+
+              <label for="surname"><span>Фамилия</span>
+                <input type="text" id="surname" required />
+              </label>
+
+              <label for="mail"><span>Email</span>
+                <input type="email" id="mail" required />
+              </label>
+
+              <label for="tel"><span>Телефон</span>
+                <input type="tel" id="tel" required />
+              </label>
+            </div>
+          </div>
+          <section>
+            <h3 class="uroven">Уровень вашего образования</h3>
+            <fieldset>
+              <div>
+                <label>
+                  <input type="radio" value="Среднее общее" />
+                  Среднее общее
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="radio" value="Среднее профессиональное" />
+                  Среднее профессиональное
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="radio" value="Высшее" />
+                  Высшее
+                </label>
+              </div>
+            </fieldset>
+
+            <br>
+            <br>
+            <br>
+            <div class="social">
+              <label for="social"><span class="social-text">Ссылка на соц. сети</span></label>
+              <input type="url" id="social" required />
+            </div>
+
+          </section>
+
+
+          <h3 class="uroven">Ваш опыт</h3>
+          <textarea name="desc" autocomplete="off" id="desc" cols="55" rows="10"
+            placeholder="Расскажите о себе"></textarea>
+          <br>
+          <button type="reset">Сбросить</button>
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="logic-block">
+        <h2>Доплнительные требования</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quidem
+          fugiat asperiores accusamus, quaerat dolorem delectus!
+          <strong>Cupiditate, quaerat facilis optio minima dolore</strong>
+          reiciendis labore temporibus impedit soluta veritatis architecto
+          eligendi maiores rerum dolorem asperiores fugiat iusto porro!
+          Repellat dolor consequatur sapiente? Rem nihil doloribus debitis!
+          <em>Quis cupiditate est dolores</em>, nobis quam accusantium! Ea,
+          aut a vero eius maxime suscipit? Iusto ullam eligendi aspernatur aut
+          harum recusandae consequatur beatae quibusdam doloribus enim,
+          sapiente, quo dolore est itaque alias minima quod distinctio rem
+          soluta! Reiciendis beatae ducimus fugit quam aliquid harum, labore
+          voluptates voluptatum atque, quidem nesciunt ex quod consequatur!
+          Reprehenderit, neque.
+        </p>
+      </section>
+      <section>
+        <div class="map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A53c178054731005f6ee9031143e9f67d5e6115676e5b195cfb690a0bfc40fcf0&amp;source=constructor"
+            width="100%" height="240" frameborder="0"></iframe>
+        </div>
+      </section>
+    </div>
+  </body>
+  <footer>
+    <div class="container">
+      <div class="logo">
+        <a href="/">Стажировки в <strong>IT</strong></a>
+      </div>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          quia velit excepturi officia incidunt iste harum officiis explicabo
+          ad odit?
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
