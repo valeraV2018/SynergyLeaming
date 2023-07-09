@@ -127,14 +127,19 @@ textarea {
     display: block;
 }
 
-.vac-list {
+/* .vac-list {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 /* #first {
     order: 1;
 } */
+.vac-list {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 100px;
+}
 
 #vac ul {
     padding: 0;
@@ -350,6 +355,80 @@ button {
 fieldset {
     width: 400px;
 }
+
+/* Gridd - Сетка */
+
+.gallary .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.galary-box {
+    border-radius: 30px;
+    overflow: hidden;
+    /* Для скругления картинок */
+
+}
+
+.galary-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.box5 {
+    grid-column: span 2;
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+
+    .gallary,
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: flex-start;
+    }
+
+    .box1,
+    .box2,
+    .box5 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .gallary,
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5);
+    }
+}
+
+
+
 
 footer {
     background: rgb(90, 83, 83);
